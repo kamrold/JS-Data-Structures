@@ -1,0 +1,29 @@
+.flex-container{
+	display: flex;
+	margin: 5px;
+  padding: 15px;
+  height: auto;
+  width: 100%;
+}
+#wrapper{
+	width: 100%;
+	height: auto;
+	padding: 12px;
+	margin: 0 auto;
+}
+.navbar{
+	background-color: #3C8CFA;
+	height: auto;
+	width: 100%;
+	padding: 12px;
+	text-decoration: none;
+}
+.navbar a{
+	text-decoration: none;
+}
+.page-footer{
+	background-color: #142B56;
+	width: 100%
+	height: auto;
+	padding: 12px;
+}

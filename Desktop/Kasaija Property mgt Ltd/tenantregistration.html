@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+	  <link href="/your-path-to-fontawesome/css/solid.css" rel="stylesheet">
+       <link href="/your-path-to-fontawesome/css/all.css" rel="stylesheet"> <!--load all styles -->
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	  <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="tenantregistration.css">
+	<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+
+	<title>Tenant registration page</title>
+	
+</head>
+<body id="page-top">
+<div id ="wrapper">
+    <!-- Image and text -->
+<nav class="navbar navbar-light primary-color">
+  <a class="navbar-brand" href="#">
+    <img src="images/homelogo.png" width="100px" height="100px" 
+      alt="my logo"> Kasaija Properties Management 
+  </a>
+</nav>
+<div id="tenant-form">
+    <h3 class="head-2" style="text-align: center;">Register Tenant Account Here</h3><br>
+	<fieldset>
+		<form>
+			<label><b>Tenant First Name<b></label><br>
+			<input type="text" name="fname" placeholder="tenant first name"><br>
+						<label><b>Tenant Last Name<b></label><br>
+						<input type="text" name="lname" placeholder="tenant last name"><br>
+			<label><b>Type of Property<b></label><br>
+			                 <input type="checkbox" class="custom-control-input" id="defaultChecked1" name="residence"><br>
+			                 			  <label class="custom-control-label" for="defaultChecked1">Residential</label><br>
+                                  <input type="checkbox" class="custom-control-input" id="defaultChecked2" name="commercial"><br>
+                                                   <label class="custom-control-label" for="defaultChecked2">Commercial</label><br>
+
+             <label><b>Tenant Contact<b></label><br>
+            <input type="tel" name="phone" placeholder="e.g +256708557890" required><br>
+           <label><b>Tenant Payment Terms<b></label><br>
+
+           <input type="checkbox" class="custom-control-input" id="defaultChecked3" name="mobiles"><br>
+    <label class="custom-control-label" for="defaultChecked3">Mobile money</label><br>
+            <input type="checkbox" class="custom-control-input" id="defaultChecked4" name="banks"><br>
+    <label class="custom-control-label" for="defaultChecked4">Bank Transfer</label><br>
+
+            <input type="checkbox" class="custom-control-input" id="defaultChecked5" name="cashs"><br>
+    <label class="custom-control-label" for="defaultChecked5">Cash</label><br>
+    <label>Tenant Duration</label><br>
+<label for="start">Start month:</label><br>
+
+<input type="month" id="start" name="start"
+       min="2019-01" value="2019-07"><br>
+       <label for="start">End month:</label><br>
+
+<input type="month" id="end" name="end"
+       min="2019-01" value="2019-08"><br><br>
+<input class="btn btn-primary" type="submit" value="Submit" id="btnsubmit"><br><br>
+<input class="btn btn-primary" type="reset" value="Reset"><br><br>
+</div>
+</form>
+		<div class="alert alert-danger" role="alert" id="myalert">
+	<a  id ="linkClose" href="#" class="close">&times;</a>
+	<b>Your Data was successfully submitted</b>
+	</fieldset>
+</div>
+<script type="text/javascript">
+	$(document).ready(function (){
+  $('btnsubmit').click(function() {
+     $('#myalert').show('fade');
+
+     setTimeout(function(){
+          $('#myalert').show('fade');
+
+     }, 2000);
+  });
+
+    $('#linkClose').click(function(){
+        $('#myalert').hide('fade');
+
+    });
+	}); 
+
+</script>
+   <!-- Footer -->
+<footer class="page-footer font-small blue">
+
+  <!-- Copyright -->
+  <div class="footer-copyright text-center py-3">© 2019 Copyright:
+    <a href=""> kasaija Properties Dashboard</a>
+  </div>
+  <!-- Copyright -->
+
+</footer>
+<!-- Footer -->
+</div>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>
